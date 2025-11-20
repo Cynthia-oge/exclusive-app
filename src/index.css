@@ -1,0 +1,18 @@
+@import "tailwindcss";
+:root{
+    --primary-bg: #ffffff;
+    --dark-bg: #000000;
+    --primary2: #363738;
+    --text-colour1: #fafafa;
+    --text-colour2: #7d8184;
+    --dark-button: #000000;
+    --dark-card: #000000;
+    --dark-text: #000000;
+    --secondary-colour1: #f5f5f5;
+    --secondary-colour2: #fefaf1;
+    --secondary-colour3: #db4444;
+    --button1: #00ff66;
+    --button2: #db4444;
+    --hover-button1: #e07575;
+    --hover-button2: #a0bce0;
+}
