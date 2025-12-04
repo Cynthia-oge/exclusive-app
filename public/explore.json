@@ -1,0 +1,74 @@
+[
+     {
+        "id": 1,
+        "image":"../src/assets/images/DogFood.jpg",
+        "name": "Breed Dry Dog Food",
+        "price": "$100",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(35)"
+    },
+
+     {
+        "id": 2,
+        "image":"../src/assets/images/CanonCamera.png",
+        "name": "CANON EOS DSLR Camera",
+        "price": "$360",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(96)"
+    },
+
+     {
+        "id": 3,
+        "image":"../src/assets/images/GamingLaptop.png",
+        "name": "ASUS FHD Gaming Laptop",
+        "price": "$700",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(325)"
+    },
+
+     {
+        "id": 4,
+        "image":"../src/assets/images/ProductSet.png",
+        "name": "Curology Product Set ",
+        "price": "$500",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(145)"
+    },
+
+     {
+        "id": 5,
+        "image":"../src/assets/images/car.png",
+        "name": "Kids Electric Car",
+        "price": "$960",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(65)"
+    },
+
+     {
+        "id": 6,
+        "image":"../src/assets/images/coat.png",
+        "name": "Kids Electric Car",
+        "price": "$1160",
+        "oldPrice": "$360",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(35)"
+    },
+
+     {
+        "id": 7,
+        "image":"../src/assets/images/shooterGamepad.png",
+        "name": "GP11 Shooter USB Gamepad",
+        "price": "$660",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(55)"
+    },
+
+     {
+        "id": 8,
+        "image":"../src/assets/images/Jacket.png",
+        "name": "Quilted Satin Jacket",
+        "price": "$660",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(55)"
+    }
+]

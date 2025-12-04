@@ -16,3 +16,12 @@
     --hover-button1: #e07575;
     --hover-button2: #a0bce0;
 }
+
+.hideScrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hideScrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
