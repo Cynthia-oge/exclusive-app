@@ -1,19 +1,21 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import BestProductCard from '../BestProductCard/BestProductCard'
+import { ProductContext } from '../../context/ProductContext'
 
 const BestProducts = () => {
-     const [bestProductList, setBestProductList] = useState([])
+    //  const [bestProductList, setBestProductList] = useState([])
         
-          useEffect(() => {
-            fetch('./best.json')
-            .then((res) =>{
-              return res.json()
-            })
-            .then((data)=>{
-              console.log(data)
-              setBestProductList(data)
-            })
-          },[])
+    //       useEffect(() => {
+    //         fetch('./best.json')
+    //         .then((res) =>{
+    //           return res.json()
+    //         })
+    //         .then((data)=>{
+    //           console.log(data)
+    //           setBestProductList(data)
+    //         })
+    //       },[])
+    const {productList} = useContext(ProductContext)
   return (
     <div className='mt-5'>
         <div className='flex gap-2 ml-23 '>
@@ -30,7 +32,7 @@ const BestProducts = () => {
       
         <div className="md:ml-20 mt-8">
             <div className="md:grid grid-flow-col auto-cols-max gap-8 overflow-x-auto md:grid-cols-none mx-auto">
-              {bestProductList.map((product, i) => (
+              {productList.filter((p) => p.isBestSelling).map((product, i) => (
                 <BestProductCard
                   key={i}
                   className={` flex flex-col items-center justify-center text-center`}

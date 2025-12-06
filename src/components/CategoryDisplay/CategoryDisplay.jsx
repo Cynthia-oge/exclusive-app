@@ -4,18 +4,49 @@ import NextArrow from '../../assets/icons/nextArrow.svg'
 import Category from '../Category/Category'
 
 const CategoryDisplay = () => {
-    const [categoryList, setCategoryList] = useState([])
+    // const [categoryList, setCategoryList] = useState([])
     
-      useEffect(() => {
-        fetch('./category.json')
-        .then((res) =>{
-          return res.json()
-        })
-        .then((data)=>{
-          console.log(data)
-          setCategoryList(data)
-        })
-      },[])
+    //   useEffect(() => {
+    //     fetch('./category.json')
+    //     .then((res) =>{
+    //       return res.json()
+    //     })
+    //     .then((data)=>{
+    //       console.log(data)
+    //       setCategoryList(data)
+    //     })
+    //   },[])
+    const category = [
+    {
+        name: "Phones",
+        icon:"../src/assets/icons/phone.svg"
+    },
+
+     {
+        name: "Computers",
+        icon:"../src/assets/icons/Computer.svg"
+    },
+
+     {
+        name: "SmartWatch",
+        icon:"../src/assets/icons/SmartWatch.svg"
+    },
+
+     {
+        name: "Camera",
+        icon:"../src/assets/icons/camera.svg"
+    },
+
+     {
+        name: "HeadPhones",
+        icon:"../src/assets/icons/HeadPhone.svg"
+    },
+
+     {
+        name: "Gaming",
+        icon:"../src/assets/icons/Gaming.svg"
+    }
+]
   return (
     <div className='mt-5'>
         <div className='flex gap-2 ml-23 '>
@@ -37,7 +68,7 @@ const CategoryDisplay = () => {
       
         <div className="md:ml-20 mt-8">
             <div className="grid grid-flow-col auto-cols-max gap-8 overflow-x-auto md:grid-cols-none">
-              {categoryList.map((category, i) => (
+              {category.map((category, i) => (
                 <Category
                   key={i}
                   className={`${category.name === "Camera" ? "bg-[var(--secondary-colour3)]" : ""} flex flex-col items-center justify-center text-center`}

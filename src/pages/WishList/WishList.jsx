@@ -6,9 +6,10 @@ import ProductCard from '../../components/ProductCard/ProductCard'
 const WishList = () => {
     const [wishList, setWishList] = useState([])
      const [productList, setProductList] = useState([])
+    
             
     useEffect(() => {
-        fetch('./best.json')
+        fetch('./product.json')
     .then((res) =>{
          return res.json()
         })
@@ -25,7 +26,6 @@ const WishList = () => {
           return res.json()
         })
         .then((data)=>{
-          console.log(data)
           setProductList(data)
         })
       },[])

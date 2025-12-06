@@ -1,6 +1,9 @@
 [
     {
         "id": 1,
+        "isBestSelling": false,
+        "isMainProduct": true,
+        "isExploreProduct": false,
         "image":"../src/assets/images/Gamepad.png",
         "name": "HAVIT HV-G92 Gamepad",
         "price": "$120",
@@ -12,6 +15,9 @@
 
      {
         "id": 2,
+        "isBestSelling": false,
+        "isMainProduct": true,
+        "isExploreProduct": false,
         "image":"../src/assets/images/WiredKeyboard.png",
         "name": "AK-900 Wired Keyboard",
         "price": "$960",
@@ -23,6 +29,9 @@
 
      {
         "id": 3,
+        "isBestSelling": false,
+        "isMainProduct": true,
+        "isExploreProduct": false,
         "image":"../src/assets/images/GamingMonitor.png",
         "name": "IPS LCD Gaming Monitor",
         "price": "$370",
@@ -34,6 +43,9 @@
 
      {
         "id": 4,
+        "isBestSelling": false,
+        "isMainProduct": true,
+        "isExploreProduct": false,
         "image":"../src/assets/images/ComfortChair.png",
         "name": "S-Series Comfort Chair",
         "price": "$375",
@@ -45,6 +57,9 @@
 
      {
         "id": 5,
+        "isBestSelling": false,
+        "isMainProduct": true,
+        "isExploreProduct": false,
         "image":"../src/assets/images/ComfortChair.png",
         "name": "S-Series Comfort Chair",
         "price": "$375",
@@ -52,5 +67,155 @@
         "discountPercent": "-25%",
         "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/starHalfFilled.svg"],
         "rating": "(99)"
+    },
+
+     {
+        "id": 1,
+        "isBestSelling": true,
+        "isMainProduct": false,
+        "isExploreProduct": false,
+        "image":"../src/assets/images/coat.png",
+        "name": "The north coat",
+        "price": "$260",
+        "oldPrice": "$360",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(65)"
+    },
+
+     {
+        "id": 2,
+        "isBestSelling": true,
+        "isMainProduct": false,
+        "isExploreProduct": false,
+        "image":"../src/assets/images/bag.png",
+        "name": "Gucci duffle bag",
+        "price": "$960",
+        "oldPrice": "$1160",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/StarHalfFilled.svg"],
+        "rating": "(65)"
+    },
+
+     {
+        "id": 3,
+        "isBestSelling": true,
+        "isMainProduct": false,
+        "isExploreProduct": false,
+        "image":"../src/assets/images/CpuCooler.png",
+        "name": "RGB liquid CPU Cooler",
+        "price": "$160",
+        "oldPrice": "$170",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/StarHalfFilled.svg"],
+        "rating": "(65)"
+    },
+
+     {
+        "id": 4,
+        "isBestSelling": true,
+        "isMainProduct": false,
+        "isExploreProduct": false,
+        "image":"../src/assets/images/bookShelf.png",
+        "name": "Small BookSelf",
+        "price": "$360",
+        "oldPrice": "",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/StarHalfFilled.svg"],
+        "rating": "(65)"
+    },
+
+     {
+        "id": 1,
+        "isBestSelling": false,
+        "isMainProduct": false,
+        "isExploreProduct": true,
+        "image":"../src/assets/images/DogFood.jpg",
+        "name": "Breed Dry Dog Food",
+        "price": "$100",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(35)"
+    },
+
+     {
+        "id": 2,
+        "isBestSelling": false,
+        "isMainProduct": false,
+        "isExploreProduct": true,
+        "image":"../src/assets/images/CanonCamera.png",
+        "name": "CANON EOS DSLR Camera",
+        "price": "$360",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(96)"
+    },
+
+     {
+        "id": 3,
+        "isBestSelling": false,
+        "isMainProduct": false,
+        "isExploreProduct": true,
+        "image":"../src/assets/images/GamingLaptop.png",
+        "name": "ASUS FHD Gaming Laptop",
+        "price": "$700",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(325)"
+    },
+
+     {
+        "id": 4,
+        "isBestSelling": false,
+        "isMainProduct": false,
+        "isExploreProduct": true,
+        "image":"../src/assets/images/ProductSet.png",
+        "name": "Curology Product Set ",
+        "price": "$500",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(145)"
+    },
+
+     {
+        "id": 5,
+        "isBestSelling": false,
+        "isMainProduct": false,
+        "isExploreProduct": true,
+        "image":"../src/assets/images/car.png",
+        "name": "Kids Electric Car",
+        "price": "$960",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(65)"
+    },
+
+     {
+        "id": 6,
+        "isBestSelling": false,
+        "isMainProduct": false,
+        "isExploreProduct": true,
+        "image":"../src/assets/images/coat.png",
+        "name": "Kids Electric Car",
+        "price": "$1160",
+        "oldPrice": "$360",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(35)"
+    },
+
+     {
+        "id": 7,
+        "isBestSelling": false,
+        "isMainProduct": false,
+        "isExploreProduct": true,
+        "image":"../src/assets/images/shooterGamepad.png",
+        "name": "GP11 Shooter USB Gamepad",
+        "price": "$660",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(55)"
+    },
+
+     {
+        "id": 8,
+        "isBestSelling": false,
+        "isMainProduct": false,
+        "isExploreProduct": true,
+        "image":"../src/assets/images/Jacket.png",
+        "name": "Quilted Satin Jacket",
+        "price": "$660",
+        "ratingStar": ["../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/ assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg", "../src/assets/icons/YellowStar.svg"],
+        "rating": "(55)"
     }
+
 ]

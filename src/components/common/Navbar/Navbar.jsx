@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from "react-router-dom";
 // import { IoChevronDown } from "react-icons/io5";
 import ChevronDown from '../../../assets/icons/DropDown.svg?react'
 import { IoSearch } from "react-icons/io5";
 import { IoHeartOutline } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
+import { ProductContext } from '../../../context/ProductContext';
 
 
 
 function Navbar() {
+  const {name, cart} = useContext(ProductContext)
   return (
     <div>
         <div className="flex items-center justify-between bg-[var(--dark-bg)] h-10 xl:h-14 text-[#c2dfe5] px-3 md:px-14">
@@ -32,13 +34,15 @@ function Navbar() {
               <li><a href="">About</a></li>
               <li><Link to="/signup">Sign Up</Link></li>
             </ul>
-          
+          <p>{name}</p>
           <div className="flex gap-6 relative">
             <input type="search" name="" id="" placeholder='What are you looking for?' className='w-60 h-8 px-4 bg-[var(--secondary-colour1)] outline-none' />
             <IoSearch size={20} className='absolute left-54 top-1' />
             <Link to="wishlist"><IoHeartOutline size={22} className="hidden md:flex cursor-pointer" /></Link>
-            <IoCartOutline size={22} className="hidden md:flex cursor-pointer" />
-
+            <div>
+              <span>{cart.length}</span>
+              <IoCartOutline size={22} className="hidden md:flex cursor-pointer" />
+            </div>
           </div>
           <button className="md:hidden text-2xl">
             ☰

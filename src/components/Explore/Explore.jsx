@@ -1,21 +1,23 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import PrevArrow from '../../assets/icons/prevArrow.svg'
 import NextArrow from '../../assets/icons/nextArrow.svg'
 import ExploreCard from '../ExploreCard/ExploreCard'
+import { ProductContext } from '../../context/ProductContext'
 
 const Explore = () => {
-    const [productList, setProductList] = useState([])
+    // const [productList, setProductList] = useState([])
     
-      useEffect(() => {
-        fetch('./explore.json')
-        .then((res) =>{
-          return res.json()
-        })
-        .then((data)=>{
-          console.log(data)
-          setProductList(data)
-        })
-      },[])
+    //   useEffect(() => {
+    //     fetch('./explore.json')
+    //     .then((res) =>{
+    //       return res.json()
+    //     })
+    //     .then((data)=>{
+    //       console.log(data)
+    //       setProductList(data)
+    //     })
+    //   },[])
+    const {productList} = useContext(ProductContext)
   return (
     <div className='mt-5'>
         <div className='flex gap-2 ml-23 '>
@@ -37,7 +39,7 @@ const Explore = () => {
       
         <div className="md:ml-20 mt-8">
             <div className="md:grid grid-cols-4 gap-4">
-              {productList.map((product, i) => (
+              {productList.filter((p) => p.isExploreProduct).map((product, i) => (
                 <ExploreCard
                    key={i}
                 image={product.image}

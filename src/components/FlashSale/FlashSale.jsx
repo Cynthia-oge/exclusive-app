@@ -1,21 +1,24 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import ProductCard from '../ProductCard/ProductCard'
 import PrevArrow from '../../assets/icons/prevArrow.svg'
 import NextArrow from '../../assets/icons/nextArrow.svg'
+import { ProductContext } from '../../context/ProductContext'
 
 function FlashSale() {
-  const [productList, setProductList] = useState([])
+  // const [productList, setProductList] = useState([])
 
-  useEffect(() => {
-    fetch('./product.json')
-    .then((res) =>{
-      return res.json()
-    })
-    .then((data)=>{
-      console.log(data)
-      setProductList(data)
-    })
-  },[])
+  // useEffect(() => {
+  //   fetch('./product.json')
+  //   .then((res) =>{
+  //     return res.json()
+  //   })
+  //   .then((data)=>{
+  //     console.log(data)
+  //     setProductList(data)
+  //   })
+  // },[])
+
+  const {productList} = useContext(ProductContext)
   return (
     <div className='mt-5'>
         <div className='flex gap-2 ml-23 '>
@@ -43,7 +46,7 @@ function FlashSale() {
         </div>
        <div className="overflow-x-auto md:ml-20 hideScrollbar ">
           <div className="md:grid grid-flow-col auto-cols-max gap-8 md:grid-cols-none">
-            {productList.map((product, i) => (
+            {productList.filter((p) => p.isMainProduct).map((product, i) => (
               <ProductCard 
                 key={i}
                 image={product.image}
